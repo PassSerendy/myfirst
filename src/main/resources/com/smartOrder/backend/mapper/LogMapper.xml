@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.smartOrder.backend.mapper.LogMapper">
+
+    <resultMap id="BaseResultMap" type="com.smartOrder.backend.entity.Log">
+            <id property="id" column="id" />
+            <result property="userId" column="user_id" />
+            <result property="action" column="action" />
+            <result property="url" column="url" />
+            <result property="method" column="method" />
+            <result property="ip" column="ip" />
+            <result property="time" column="time" />
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,user_id,action,url,method,ip,
+        time
+    </sql>
+</mapper>
